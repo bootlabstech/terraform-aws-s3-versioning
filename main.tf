@@ -16,6 +16,6 @@ resource "aws_s3_bucket_acl" "example" {
 resource "aws_s3_bucket_ownership_controls" "s3_bucket_acl_ownership" {
   bucket = aws_s3_bucket.main.id
   rule {
-    object_ownership = "ObjectWriter"
+    object_ownership = "BucketOwnerEnforced"
   }
 }
