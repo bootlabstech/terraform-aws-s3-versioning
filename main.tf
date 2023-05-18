@@ -14,4 +14,6 @@ resource "aws_s3_bucket_ownership_controls" "s3_bucket_acl_ownership" {
   rule {
     object_ownership = "BucketOwnerEnforced"
   }
+  
 }
+
